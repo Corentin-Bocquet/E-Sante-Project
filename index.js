@@ -296,7 +296,7 @@ function choisirPhotoAleatoire() {
 }
 
 function choisirNomAleatoire() {
-  var noms = ['John Doe', 'Jane Doe', 'Alice Smith', 'Bob Johnson'];
+  var noms = ['John Doe ', 'Jane Doe ', 'Alice Smith ', 'Bob Johnson '];
   var indiceAleatoire = Math.floor(Math.random() * noms.length);
   return noms[indiceAleatoire];
 }
