@@ -296,7 +296,28 @@ function choisirPhotoAleatoire() {
 }
 
 function choisirNomAleatoire() {
-  var noms = ['John Doe ', 'Jane Doe ', 'Alice Smith ', 'Bob Johnson '];
+  var noms = [
+    "Emma Martin",
+    "Lucas Dupont",
+    "Chloé Lambert",
+    "Louis Roussel",
+    "Alice Girard",
+    "Hugo Moreau",
+    "Léa Laurent",
+    "Gabriel Leroy",
+    "Manon Rousseau",
+    "Ethan Mercier",
+    "Camille Lefevre",
+    "Jules André",
+    "Zoé Thomas",
+    "Nathan David",
+    "Jade Simon",
+    "Noah Leroux",
+    // Ajoutez les autres noms et prénoms ici...
+  ];
+  
+  console.log(nomsPrenoms);
+  
   var indiceAleatoire = Math.floor(Math.random() * noms.length);
   return noms[indiceAleatoire];
 }
@@ -309,7 +330,28 @@ function obtenirHeureActuelle() {
 }
 
 function obtenirLieuAleatoire() {
-  var lieux = ["Paris", "New York", "Londres", "Tokyo"];
+  var lieux = [
+    "Paris, France",
+    "New York, États-Unis",
+    "Londres, Royaume-Uni",
+    "Tokyo, Japon",
+    "Moscou, Russie",
+    "Sydney, Australie",
+    "Rome, Italie",
+    "Dubai, Émirats arabes unis",
+    "Mumbai, Inde",
+    "São Paulo, Brésil",
+    "Buenos Aires, Argentine",
+    "Toronto, Canada",
+    "Le Caire, Égypte",
+    "Mexico, Mexique",
+    "Berlin, Allemagne",
+    "Shanghai, Chine",
+    // Ajoutez les autres villes ici...
+  ];
+  
+  console.log(villes);
+  
   var indiceAleatoire = Math.floor(Math.random() * lieux.length);
   return lieux[indiceAleatoire];
 }
