@@ -289,7 +289,7 @@ main .date input[type="date"]{
 
 main .insights{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 1.6rem;
 }
 
@@ -363,6 +363,96 @@ main .insights svg circle{
 
 
 main .insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .insights2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1.6rem;
+}
+
+.imgECG{
+    border-radius: var(--card-border-radius);
+}
+
+main .insights2 > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .insights2 > div:hover{
+   box-shadow: none;
+}
+
+main .insights2 > div span{
+    background: rgb(239, 54, 54);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+main .insights2 > div#red span{
+    background: var(--color-fin_titre);
+}
+
+main .insights2 > div#green span{
+    background: var(--color-success);
+}
+
+main .insights2 > div#yellow span{
+    background: var(--color-warning);
+}
+
+main .insights2 > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .insights2 h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+main .insights2 .progress{
+
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+main .insights2 svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+main .insights2 svg circle{
+   fill: none;
+   stroke: var(--color-primary);
+   stroke-width: 14;
+   stroke-linecap: round;
+   transform: translate(5px, 5px);
+   stroke-dasharray: 110;
+   stroke-dashoffset: 92;
+}
+
+
+
+main .insights2 .progress .number{
     position: absolute;
     top: 0;
     left: 0;
