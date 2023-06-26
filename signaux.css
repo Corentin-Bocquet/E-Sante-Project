@@ -271,7 +271,15 @@ main .insights{
 main .insights h3{
     color: var(--color-white);
     display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 5s ease;
 }
+
+ main .insights:hover h3 {
+    visibility: visible;
+    opacity:1;
+  }
 
 main .insights .sales:hover{
     background: var(--color-dark);
@@ -280,7 +288,7 @@ main .insights .sales:hover{
 
 main .insights .sales:hover h1{
     color: var(--color-white);
-    transition: all 300ms ease;
+    transition: all 1000ms ease;
 }
 
 main .insights .sales:hover h3{

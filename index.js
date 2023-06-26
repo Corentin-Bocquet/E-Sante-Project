@@ -121,6 +121,21 @@ function changerCouleurTheme() {
         localStorage.setItem("age", age);
 
 
+      // Modification de la balise h2 avec la classe "nom"
+  var h2ElementNom = document.querySelector(".nom");
+  h2ElementNom.textContent = "Prénom : " + nom;
+
+  var h2ElementEmail = document.querySelector(".email");
+  h2ElementEmail.textContent = "Email : " + email;
+
+  var h2ElementAge = document.querySelector(".age");
+  h2ElementAge.textContent = "Âge : " + age;
+
+  var h2ElementContinent = document.querySelector(".continent");
+  h2ElementContinent.textContent = "Continent : " + continent;
+
+
+
 
       var nom_sto = localStorage.getItem("nom");
       var age_sto = localStorage.getItem("age");
